@@ -15,47 +15,107 @@ Nesse laboratório prepararemos a infraestrutura base do workshop, onde criaremo
 ### Criando o  compartimento para o projeto
 1. Acesse a console da cloud: [https://www.oracle.com/cloud/sign-in.html](https://www.oracle.com/cloud/sign-in.html)
 3. Insira o nome da sua tenancy no campo de **Cloud Account Name**
+
+![](./IMG/001-LAB1.PNG)
+
 4. Clique no botão **Continue** para ir para a página de login.
+
+![](./IMG/002-LAB1.PNG)
+
 5. Insira seu usuario/senha e clique em **Sing In**
+
+![](./IMG/003-LAB1.PNG)
+
 6. Acesse o **menu no canto esquerdo superior**, em **Identidade & Segurança** (Identity & Security), clique em **Compartimentos** (Compartments).
+
+![](./IMG/004-LAB1.PNG)
+
 7. Clique em Criar Compartimento (Create Compartment).
+
+![](./IMG/005-LAB1.PNG)
+
 8. Preencha os seguintes campos:
 -  **Name:** < Defina um nome para o compartimento >
 -  **Description:** < Defina uma descrição para o compartimento >
 -  **Parent Compartment:** Selecione o compartimento sinalizado como **(root)**
+
+![](./IMG/005-LAB1.PNG)
+
 9. Clique em **Create Compartment**
 10. Aguarde um breve momento, e atualize a página do navegador para que a mudança seja refletida.
+
+![](./IMG/007-LAB1.PNG)
 
 ### Criando ambiente base utilizando o Oracle Resource Manager
 
  11. Acesse o menu no canto esquerdo superior, em **Serviços de Desenvolvimento** (Developer Services), clique em **Pilhas** (Stacks)
+ 
+![](./IMG/009-LAB1.PNG)
+
  12. No canto esquerdo inferior, em **Escopo** (List Scope), selecione o compartimento recém criado. *Se caso o compartimento não estiver listado, basta atualizar a página do navegador*
+
+![](./IMG/010-LAB1.PNG)
+
  13. Faça o [Download](https://github.com/gustavogaspar/devopsworkshopapp/raw/main/terraform.zip) do ".zip" de configuração contendo o manifesto terraform (Não é necessária a extração do arquivo).
  14. Clique em **Criar Pilha** (Create Stack)
+ 
+![](./IMG/011-LAB1.PNG)
+
  15. Preencha o formulário conforme abaixo:
- - Selecione **Minha Configuração** (My Configuration)
+- Selecione **Minha Configuração** (My Configuration)
 - Em **Configuração de Pilha** (Stack Configuration), selecione **Arquivo .zip** e faça o upload do .zip de configuração coletado no passo **14** deste guide.
+
+![](./IMG/012-LAB1.PNG)
+
 16. Clique em **Próximo** (Next)
 17. Preencha o formulário com as seguintes informações:
+
 
 - **Compartment**: Selecione o compartimento criado nesse laboratório
 - **Number of Worker Nodes:** 2
 - **Select a shape for the Worker Nodes instances**: VM.Standard2.1
+
+![](./IMG/013-LAB1.PNG)
+
 18. Clique em **Próximo** (Next)
 19. Selecione a checkbox **Run Apply** e clique em **Criar**
+
+![](./IMG/014-LAB1.PNG)
+
 20. Enquanto a infraestrutura do laboratório esta sendo gerada siga para o próximo passo.
 
 ### Coletando informações necessárias
 
 21. No canto direito superior da console,  selecione o **botão de perfil** e clique em seu **usuário**. (Caso você tenha provisionado sua tenancy para esse laboratório, é possivel que este botão esteja desabilitado, basta deslogar sua conta e logar novamente para que tudo seja carregado corretamente.)
+
+![](./IMG/015-LAB1.PNG)
+
 22. Copie a informação de **OCID** para um bloco de notas.
+
+![](./IMG/016-LAB1.PNG)
+
 23. No canto esquerdo inferior em **Recursos** (Resources) selecione **Auth Tokens**
+
+![](./IMG/017-LAB1.PNG)
+
 24. Selecione **Gerar Token** (Generate Token)
+
+
+
 25. Insira uma descrição qualquer para o token
+
+![](./IMG/018-LAB1.PNG)
+
 26. Copie a informação do token gerado para o block de notas. (**IMPORTANTE**: não é possivel recuperar essa informação novamente, portanto se caso perder o token, será necessario gerar um token novo).
+
+![](./IMG/019-LAB1.PNG)
+
 
 ### Construindo de container de aplicação e enviando ao Oracle Container Registry utilizando Cloud Shell
 27. No canto superior direito da console, selecione o icone do **Cloud Shell** ">_".
+
+![](./IMG/020-LAB1.PNG)
+
 28. Aguarde o carregamento do Shell, e digite:
 
     $ git clone https://github.com/gustavogaspar/devopsworkshopapp.git
@@ -69,7 +129,13 @@ Nesse laboratório prepararemos a infraestrutura base do workshop, onde criaremo
     $ source ./buildandpush.sh
 
 31. Informe o seu **User OCID**. (Informação coletada no passo 22 desse laboratório)
+
+![](./IMG/021-LAB1.PNG)
+
 32. No campo de **Password** Informe o seu **Auth Token**. **IMPORTANTE** não há feedback visual de que a senha está sendo digitada. (Informação coletada no passo 26 desse laboratório)
+
+![](./IMG/022-LAB1.PNG)
+
 33. Aguarde a conclusão do processo, e vá ao próximo laboratório.
 
 
