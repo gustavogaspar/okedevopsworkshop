@@ -6,8 +6,11 @@ Descubra como iniciar sua jornada ao Cloud Native utilizando Oracle Cloud Infras
 Clique nos links abaixo para acessar os Laboratórios:
 
 
-[ LAB 01 ] - [PREPARAÇÃO DE AMBIENTE](./LAB01/LAB01.md)
-[ LAB 02 ] - [CRIAÇÃO DE AMBIENTE DE DESENVOLVIMENTO](./LAB02/LAB02.md)
-[ LAB 03 ] - [CRIAÇÃO DE AMBIENTE DE VALIDAÇÃO](./LAB03/LAB03.md)
-[ LAB 04 ] - [CRIAÇÃO DE AMBIENTE DE PRODUÇÃO](./LAB04/LAB04.md)
+- [ LAB 01 ] - [PREPARAÇÃO DE AMBIENTE](./LAB01/LAB01.md)
+
+- [ LAB 02 ] - [CRIAÇÃO DE AMBIENTE DE DESENVOLVIMENTO](./LAB02/LAB02.md)
+
+- [ LAB 03 ] - [CRIAÇÃO DE AMBIENTE DE VALIDAÇÃO](./LAB03/LAB03.md)
+
+- [ LAB 04 ] - [CRIAÇÃO DE AMBIENTE DE PRODUÇÃO](./LAB04/LAB04.md)
 
