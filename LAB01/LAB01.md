@@ -111,7 +111,7 @@ Nesse laboratório prepararemos a infraestrutura base do workshop, onde criaremo
 ![](./IMG/019-LAB1.PNG)
 
 
-### Construindo de container de aplicação e enviando ao Oracle Container Registry utilizando Cloud Shell
+### Construindo o container de aplicação e enviando-o ao Oracle Container Registry utilizando Cloud Shell
 27. No canto superior direito da console, selecione o icone do **Cloud Shell** ">_".
 
 ![](./IMG/020-LAB1.PNG)
