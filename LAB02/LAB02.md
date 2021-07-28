@@ -141,7 +141,7 @@
 - **Nome** (Name): desenvolvimento.yaml
 - **Tipo** (Type): Kubernetes manifest
 - **Artifact source:** Inline
-- **Valor (Value):** Copie o conteúdo do arquivo desenvolvimento.yaml e cole no campo de valor **[IMPORTANTE]** - Arquivos YAML são baseados em identação (espaços) para sua correta execução, **portanto não remova qualquer espaço do arquivo**.
+- **Valor (Value):** Copie o conteúdo do arquivo [desenvolvimento.yaml](https://github.com/gustavogaspar/devopsworkshopapp/blob/main/manifests/desenvolvimento.yaml) e cole no campo de valor **[IMPORTANTE]** - Arquivos YAML são baseados em identação (espaços) para sua correta execução, **portanto não remova qualquer espaço do arquivo**.
 - **Substituir parâmetros usados nesse artefato** (Replace parameters used in this artifact): Sim,... (Yes,..)
 
 ![](./IMG/024-LAB2.PNG)
